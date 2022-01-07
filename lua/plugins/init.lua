@@ -47,4 +47,16 @@ return require('packer').startup(function()
   use {'hrsh7th/cmp-vsnip'}
   use {'hrsh7th/vim-vsnip'}
   use {'onsails/lspkind-nvim'}
+  -- Colorizer
+  use {'norcalli/nvim-colorizer.lua'}
+  -- Gitsigns
+  use {
+    'lewis6991/gitsigns.nvim',
+    requires = {
+      'nvim-lua/plenary.nvim'
+    },
+    config = function()
+      require('gitsigns').setup{current_line_blame = true}
+    end
+  }
 end)

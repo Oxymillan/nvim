@@ -8,5 +8,6 @@ require('treesitter-config')
 require('autopairs-config')
 require('whichkey-config')
 require('lsp')
+require('colorizer-config')
 vim.cmd('colorscheme tokyodark')
 
