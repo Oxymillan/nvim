@@ -9,5 +9,6 @@ require('autopairs-config')
 require('whichkey-config')
 require('lsp')
 require('colorizer-config')
+require('dashboard-config')
 vim.cmd('colorscheme tokyodark')
 
