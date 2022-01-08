@@ -10,5 +10,6 @@ require('whichkey-config')
 require('lsp')
 require('colorizer-config')
 require('dashboard-config')
+require('blankline-config')
 vim.cmd('colorscheme tokyodark')
 

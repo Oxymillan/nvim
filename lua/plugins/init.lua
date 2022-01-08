@@ -7,9 +7,10 @@ return require('packer').startup(function()
   -- Packer can manage itself
   use 'wbthomason/packer.nvim'
   -- Colorschemes
-  use 'tiagovla/tokyodark.nvim'
+  use {'tiagovla/tokyodark.nvim'}
   use {"ellisonleao/gruvbox.nvim", requires = {"rktjmp/lush.nvim"}}
-  use 'shaunsingh/nord.nvim'
+  use {'shaunsingh/nord.nvim'}
+  use({'rose-pine/neovim'})
   -- Treesitter
   use {'nvim-treesitter/nvim-treesitter', run = ":TSUpdate"}
   use {'windwp/nvim-ts-autotag'}
@@ -61,4 +62,6 @@ return require('packer').startup(function()
   }
   -- Dashboard
   use {'glepnir/dashboard-nvim'}
+  -- Blancline
+  use {"lukas-reineke/indent-blankline.nvim"}
 end)
