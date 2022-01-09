@@ -40,7 +40,6 @@ return require('packer').startup(function()
     requires = {
       'kyazdani42/nvim-web-devicons' -- optional, for file icon
     },
-    cmd = "NvimTreeToggle",
     config = "require('nvim-tree-config')"
   }
   -- Whichkey
@@ -49,7 +48,6 @@ return require('packer').startup(function()
   use {
     'nvim-telescope/telescope.nvim',
     requires = {{'nvim-lua/plenary.nvim'}},
-    cmd = "Telescope",
     config = "require('telescope-config')"
   }
   -- Auto completion
@@ -62,6 +60,10 @@ return require('packer').startup(function()
   use {'hrsh7th/cmp-vsnip', after = "nvim-cmp"}
   use {'hrsh7th/vim-vsnip', after = "nvim-cmp"}
   use {'onsails/lspkind-nvim'}
+  -- LSP saga
+  use {'tami5/lspsaga.nvim', config = "require('lspsaga-config')"}
+  -- LSP Installer
+  use {'williamboman/nvim-lsp-installer'}
   -- Colorizer
   use {'norcalli/nvim-colorizer.lua', event = "BufRead", config = "require('colorizer-config')"}
   -- Gitsigns
@@ -75,12 +77,15 @@ return require('packer').startup(function()
   -- Dashboard
   use {'glepnir/dashboard-nvim', config = "require('dashboard-config')"}
   -- Blancline
-  use {"lukas-reineke/indent-blankline.nvim", event = "BufRead", config = "require('blankline-config')"}
+  use {
+    "lukas-reineke/indent-blankline.nvim",
+    event = "BufRead",
+    config = "require('blankline-config')"
+  }
   -- Auto formatting
-  use {'lukas-reineke/format.nvim', cmd = "Format", config = "require('format-config')"}
+  use {'jose-elias-alvarez/null-ls.nvim', config = "require('null-ls-config')"}
   -- Toggleterm
   use {"akinsho/toggleterm.nvim", config = "require('toggleterm-config')"}
   -- Nvim-comment
-  use {'terrortylor/nvim-comment', cmd = "CommentToggle", config = "require('comment-config')"}
+  use {'terrortylor/nvim-comment', config = "require('comment-config')"}
 end)
-
