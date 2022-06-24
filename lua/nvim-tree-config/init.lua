@@ -1,12 +1,10 @@
-vim.g.nvim_tree_indent_markers = 1
-
+-- vim.g.nvim_tree_indent_markers = 1
 -- each of these are documented in `:help nvim-tree.OPTION_NAME`
 require'nvim-tree'.setup {
   disable_netrw = true,
   hijack_netrw = true,
   open_on_setup = false,
   ignore_ft_on_setup = {},
-  auto_close = true,
   open_on_tab = false,
   hijack_cursor = false,
   update_cwd = false,
@@ -32,4 +30,3 @@ require'nvim-tree'.setup {
   },
   trash = {cmd = "trash", require_confirm = true}
 }
-

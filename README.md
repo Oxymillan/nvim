@@ -1,11 +1,11 @@
-# NeoVim Config
+# My NeoVim Config
 
 ---
 
 ### Pre-requisites:
 
-- [NeoVim version 0.5 or higher](https://github.com/neovim/neovim/releases/tag/v0.5.0)
-- [Nerd Fonts](https://github.com/ryanoasis/nerd-fonts) (for icons)
+- [NeoVim version 0.7 or higher](https://github.com/neovim/neovim/releases/tag/v0.7.0)
+- [Nerd Fonts](./Fonts) (for icons)
 - [NodeJS](https://nodejs.org/en/)
 - [RipGrep](https://github.com/BurntSushi/ripgrep)
 
@@ -33,7 +33,7 @@ git clone --depth 1 https://github.com/wbthomason/packer.nvim\
 git clone https://github.com/wbthomason/packer.nvim "$env:LOCALAPPDATA\nvim-data\site\pack\packer\start\packer.nvim"
 ```
 
-3. Initialize neovim and on command mode type `:PackerInstall`
+3. Initialize neovim and on command mode type `:PackerInstall` and `PackerCompile`
 
 4. Reinicialize nvim
 
@@ -41,5 +41,4 @@ git clone https://github.com/wbthomason/packer.nvim "$env:LOCALAPPDATA\nvim-data
 
 [List of all Language Servers](https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md)
 
-- Plugin used to install Language Servers: [nvim-lsp-installer](https://github.com/williamboman/nvim-lsp-installer/)
-  To install Language type on command mode :LspInstall <language_server>
+- To install Language type on command mode `:LspInstall <language_server>`

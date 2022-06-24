@@ -34,4 +34,7 @@ vim.o.autoindent = true
 vim.bo.autoindent = true
 vim.o.expandtab = true
 vim.bo.expandtab = true
-
+vim.g.vscode_style = "dark"
+vim.o.colorcolumn = "80"
+vim.o.wrap = true
+vim.o.linebreak = true

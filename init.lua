@@ -1,6 +1,5 @@
 require('plugins')
 require('keybindings')
 require('options')
--- Installed colorschemes: tokyodark, nord, rose-pine, gruvbox
-vim.cmd('colorscheme tokyodark')
-
+-- Installed colorschemes: tokyodark, nord, rose-pine, gruvbox, vscode
+vim.cmd('colorscheme rose-pine')

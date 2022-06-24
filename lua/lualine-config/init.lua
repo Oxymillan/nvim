@@ -1,3 +1,1 @@
-require('lualine').setup({
-  options = { theme = 'tokyodark' }
-})
+require('lualine').setup({options = {theme = 'vscode'}})

@@ -9,11 +9,12 @@ return require('packer').startup(function()
   use {'tiagovla/tokyodark.nvim'}
   use {"ellisonleao/gruvbox.nvim", requires = {"rktjmp/lush.nvim"}}
   use {'shaunsingh/nord.nvim'}
-  use({'rose-pine/neovim'})
+  use {'rose-pine/neovim'}
+  use {'Mofiqul/vscode.nvim'}
   -- Treesitter
   use {
     'nvim-treesitter/nvim-treesitter',
-    run = ":TSUpdate",
+    run = ':TSUpdate',
     event = "BufWinEnter",
     config = "require('treesitter-config')"
   }
@@ -75,7 +76,7 @@ return require('packer').startup(function()
     end
   }
   -- Dashboard
-  use {'glepnir/dashboard-nvim', config = "require('dashboard-config')"}
+  -- use {'glepnir/dashboard-nvim', config = "require('dashboard-config')"}
   -- Blancline
   use {
     "lukas-reineke/indent-blankline.nvim",
