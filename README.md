@@ -1,5 +1,30 @@
 # Personal NeoVim Config
 
+![showcase](https://github.com/oxymillan/nvim-config/static/nvim1.png)
+
+<div align="center">
+  <p>
+      <a>
+        <img src="https://img.shields.io/github/repo-size/oxymillan/nvim-config"/>
+      </a>
+      <a>
+        <img src="https://img.shields.io/tokei/lines/github/oxymillan/nvim-config" 
+      />
+      <a>
+        <img src="https://img.shields.io/github/issues-raw/oxymillan/nvim-config" />
+      </a>
+      <a>
+        <img src="https://img.shields.io/github/languages/top/oxymillan/nvim-config">
+      </a>
+      <a>
+        <img src="https://img.shields.io/github/last-commit/oxymillan/nvim-config">
+      </a>
+      <a >
+        <img alt="Licence" src="https://img.shields.io/github/license/oxymillan/nvim-config" />
+      </a>
+  </p>
+</div>
+
 ---
 
 ### Pre-requisites:
@@ -7,7 +32,7 @@
 Ensure to install those first:
 
 - [NeoVim version 0.7 or higher](https://github.com/neovim/neovim/releases/tag/v0.7.0)
-- [Nerd Fonts](./Fonts) (for icons)
+- [Nerd Fonts](./fonts) (optional for icons, unzip and install font provided on fonts/ folder.)
 - [NodeJS](https://nodejs.org/en/)
 - [RipGrep](https://github.com/BurntSushi/ripgrep) (optional, for regex based
   deepsearch for patterns on contents of directory).
@@ -51,10 +76,11 @@ code suggestion, error handling etc. for this project type on command mode
 `:LspInstall sumneko_lua`
 
 ### Keyboard shortcuts
-- Those are the most useful ones, check /lua/whichkey-config/init.lua for 
-complete list
 
 Navigation between instances: Ctrl h, j, k, l
+
+- Those are the most useful ones, check /lua/whichkey-config/init.lua for 
+complete list
 
 | Key | Code Action |
 |-----|-------------|
@@ -70,3 +96,12 @@ Navigation between instances: Ctrl h, j, k, l
 | space t f | Floating Terminal |
 | space t t | Fixed Terminal |
 | space l | LSP Menu |
+
+### Credits
+
+This software uses the following open source packages:
+- Node.js
+- NeoVim
+- Nerd Fonts
+- RipGrep
+- lolcat
