@@ -76,7 +76,7 @@ return require('packer').startup(function()
     end
   }
   -- Dashboard
-  -- use {'glepnir/dashboard-nvim', config = "require('dashboard-config')"}
+  use {'glepnir/dashboard-nvim', config = "require('dashboard-config')"}
   -- Blancline
   use {
     "lukas-reineke/indent-blankline.nvim",

@@ -1,20 +1,24 @@
-# My NeoVim Config
+# Personal NeoVim Config
 
 ---
 
 ### Pre-requisites:
 
+Ensure to install those first:
+
 - [NeoVim version 0.7 or higher](https://github.com/neovim/neovim/releases/tag/v0.7.0)
 - [Nerd Fonts](./Fonts) (for icons)
 - [NodeJS](https://nodejs.org/en/)
-- [RipGrep](https://github.com/BurntSushi/ripgrep)
+- [RipGrep](https://github.com/BurntSushi/ripgrep) (optional, for regex based
+  deepsearch for patterns on contents of directory).
 
 ### Installation:
 
 1. Install content of this repository on your nvim config path
 
-```
+```sh
 git clone https://github.com/oxymillan/nvim-config  ~/.config/nvim
+mv ~/.config/nvim/nvim-config/* ~/.config/nvim/ && rm -r ~/.config/nvim/nvim-config/
 nvim +PackerSync
 ```
 
@@ -22,7 +26,7 @@ nvim +PackerSync
 
 - Unix, Linux Installation:
 
-```
+```sh
 git clone --depth 1 https://github.com/wbthomason/packer.nvim\
  ~/.local/share/nvim/site/pack/packer/start/packer.nvim
 ```
@@ -33,7 +37,7 @@ git clone --depth 1 https://github.com/wbthomason/packer.nvim\
 git clone https://github.com/wbthomason/packer.nvim "$env:LOCALAPPDATA\nvim-data\site\pack\packer\start\packer.nvim"
 ```
 
-3. Initialize neovim and on command mode type `:PackerInstall` and `PackerCompile`
+3. Initialize neovim and on command mode type `:PackerInstall` and `:PackerCompile`
 
 4. Reinicialize nvim
 
