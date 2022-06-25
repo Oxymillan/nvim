@@ -84,7 +84,7 @@ return require('packer').startup(function()
     config = "require('blankline-config')"
   }
   -- Auto formatting
-  use {'jose-elias-alvarez/null-ls.nvim', config = "require('null-ls-config')"}
+  -- use {'jose-elias-alvarez/null-ls.nvim', config = "require('null-ls-config')"}
   -- Toggleterm
   use {"akinsho/toggleterm.nvim", config = "require('toggleterm-config')"}
   -- Nvim-comment

@@ -14,10 +14,10 @@ end
 
 local mappings = {
   q = {":q<CR>", "Quit"},
-  a = {"q!<CR>", "Force Quit"},
+  a = {":q!<CR>", "Force Quit"},
   Q = {":wq<CR>", "Save & Quit"},
   w = {":w<CR>", "Save"},
-  W = {"w!<CR>", "Force Write"},
+  W = {":w!<CR>", "Force Write"},
   x = {":bdelete<CR>", "Close Buffer"},
   E = {":e ~/.config/nvim/init.lua<CR>", "Edit Config"},
   b = {":split<CR>", "Horizontal Split"},

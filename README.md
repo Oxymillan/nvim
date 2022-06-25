@@ -22,7 +22,7 @@ mv ~/.config/nvim/nvim-config/* ~/.config/nvim/ && rm -r ~/.config/nvim/nvim-con
 nvim +PackerSync
 ```
 
-2. Install Packer
+2. Install Packer (for nvim plugin management)
 
 - Unix, Linux Installation:
 
@@ -46,3 +46,27 @@ git clone https://github.com/wbthomason/packer.nvim "$env:LOCALAPPDATA\nvim-data
 [List of all Language Servers](https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md)
 
 - To install Language type on command mode `:LspInstall <language_server>`
+- For example to install lua language server to enable auto completion, 
+code suggestion, error handling etc. for this project type on command mode 
+`:LspInstall sumneko_lua`
+
+### Keyboard shortcuts
+- Those are the most useful ones, check /lua/whichkey-config/init.lua for 
+complete list
+
+Navigation between instances: Ctrl h, j, k, l
+
+| Key | Code Action |
+|-----|-------------|
+| space | Menu |
+| space e | Toggle NvimTree |
+| space w | Write file |
+| space q | Quit Instance |
+| space x | Close Buffer |
+| space f | Fuzzy finder |
+| space r | Live Grep |
+| space b | Horizontal Split |
+| space v | Vertical Split |
+| space t f | Floating Terminal |
+| space t t | Fixed Terminal |
+| space l | LSP Menu |
