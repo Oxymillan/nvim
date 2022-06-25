@@ -1,6 +1,6 @@
 # Personal NeoVim Config
 
-![showcase](https://github.com/oxymillan/nvim-config/static/nvim1.png)
+![showcase](https://github.com/Oxymillan/nvim-config/blob/main/static/nvim1.png)
 
 <div align="center">
   <p>
