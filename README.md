@@ -1,5 +1,3 @@
-# Personal NeoVim Config
-
 ![showcase](https://github.com/Oxymillan/nvim-config/blob/main/static/nvim1.png)
 
 <div align="center">
@@ -11,28 +9,30 @@
         <img src="https://img.shields.io/tokei/lines/github/oxymillan/nvim-config" 
       />
       <a>
-        <img src="https://img.shields.io/github/issues-raw/oxymillan/nvim-config" />
-      </a>
-      <a>
         <img src="https://img.shields.io/github/languages/top/oxymillan/nvim-config">
       </a>
       <a>
         <img src="https://img.shields.io/github/last-commit/oxymillan/nvim-config">
       </a>
       <a >
-        <img alt="Licence" src="https://img.shields.io/github/license/oxymillan/nvim-config" />
+        <img src="https://img.shields.io/github/license/oxymillan/nvim-config" />
       </a>
   </p>
 </div>
 
 ---
 
+### About
+
+This is my current personal configuration for neovim.
+
+
 ### Pre-requisites:
 
 Ensure to install those first:
 
 - [NeoVim version 0.7 or higher](https://github.com/neovim/neovim/releases/tag/v0.7.0)
-- [Nerd Fonts](./fonts) (optional for icons, unzip and install font provided on fonts/ folder.)
+- [Nerd Fonts](./fonts) (for icons, unzip and install font provided on fonts/ folder.)
 - [NodeJS](https://nodejs.org/en/)
 - [RipGrep](https://github.com/BurntSushi/ripgrep) (optional, for regex based
   deepsearch for patterns on contents of directory).
@@ -82,26 +82,19 @@ Navigation between instances: Ctrl h, j, k, l
 - Those are the most useful ones, check /lua/whichkey-config/init.lua for 
 complete list
 
-| Key | Code Action |
-|-----|-------------|
-| space | Menu |
-| space e | Toggle NvimTree |
-| space w | Write file |
-| space q | Quit Instance |
-| space x | Close Buffer |
-| space f | Fuzzy finder |
-| space r | Live Grep |
-| space b | Horizontal Split |
-| space v | Vertical Split |
-| space t f | Floating Terminal |
-| space t t | Fixed Terminal |
-| space l | LSP Menu |
+| Key          | Code Action                      |
+|---------     |-------------                     |
+| space        | Menu                             |
+| space e      | Toggle NvimTree                  |
+| space w      | Write file                       |
+| space q      | Quit Instance                    |
+| space x      | Close Buffer                     |
+| space f      | Fuzzy finder                     |
+| space r      | Live Grep                        |
+| space b      | Horizontal Split                 |
+| space v      | Vertical Split                   |
+| space t f    | Floating Terminal                |
+| space t t    | Fixed Terminal                   |
+| space c      | Comment selected lines           |
+| space l      | LSP Menu                         |
 
-### Credits
-
-This software uses the following open source packages:
-- Node.js
-- NeoVim
-- Nerd Fonts
-- RipGrep
-- lolcat
