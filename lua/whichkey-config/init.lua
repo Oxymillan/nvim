@@ -18,7 +18,6 @@ local mappings = {
   Q = {":wq<CR>", "Save & Quit"},
   w = {":w<CR>", "Save"},
   W = {":w!<CR>", "Force Write"},
-  d = {":Dashboard<CR>", "Dashboard"},
   x = {":bdelete<CR>", "Close Buffer"},
   E = {":e ~/.config/nvim/init.lua<CR>", "Edit Config"},
   b = {":split<CR>", "Horizontal Split"},

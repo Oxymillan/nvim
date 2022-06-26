@@ -14,10 +14,10 @@
       <a>
         <img src="https://img.shields.io/github/last-commit/oxymillan/nvim-config">
       </a>
-      <a >
-        <img src="https://img.shields.io/github/license/oxymillan/nvim-config" />
+       <a>
+        <img src="https://img.shields.io/keybase/btc/oxymilan">
       </a>
-  </p>
+ </p>
 </div>
 
 ---
@@ -75,15 +75,19 @@ git clone https://github.com/wbthomason/packer.nvim "$env:LOCALAPPDATA\nvim-data
 code suggestion, error handling etc. for this project type on command mode 
 `:LspInstall sumneko_lua`
 
-### Keyboard shortcuts
+### Navigation/Keyboard shortcuts
 
-Navigation between instances: Ctrl h, j, k, l
+On top of default vim navigation there are extra stuff you can do here,
+just hit space button on Normal mode and tryout available options. 
 
-- Those are the most useful ones, check /lua/whichkey-config/init.lua for 
+Navigation between windows: Ctrl h, j, k, l
+
+Those are the most useful ones, check /lua/whichkey-config/init.lua for 
 complete list
 
 | Key          | Code Action                      |
-|---------     |-------------                     |
+|--------------|----------------------------------|
+| space        | Menu                             |
 | space        | Menu                             |
 | space e      | Toggle NvimTree                  |
 | space w      | Write file                       |
